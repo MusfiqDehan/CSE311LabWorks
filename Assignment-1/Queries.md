@@ -1,7 +1,7 @@
 # Assignment-1 Queries (1-15)
 
 ### Query-3:
-<p><
+<p>
 SELECT DISTINCT Flno, Ffrom, Fto<br>
 FROM flights f, employees e, certified c, aircraft a<br>
 WHERE e.Eid=c.Eid<br> 
