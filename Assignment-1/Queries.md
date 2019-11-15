@@ -1,8 +1,9 @@
 ## Query-3:
-
-SELECT DISTINCT Flno, Ffrom, Fto
-FROM flights f, employees e, certified c, aircraft a
-WHERE e.Eid=c.Eid 
-AND c.Aid=a.Aid
-AND a.Cruisingrange>=f.Distance 
+<p>
+SELECT DISTINCT Flno, Ffrom, Fto<br>
+FROM flights f, employees e, certified c, aircraft a<br>
+WHERE e.Eid=c.Eid<br> 
+AND c.Aid=a.Aid<br>
+AND a.Cruisingrange>=f.Distance<br> 
 AND e.Salary > 100000;
+</p>
