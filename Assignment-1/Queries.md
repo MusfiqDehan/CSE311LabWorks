@@ -4,11 +4,11 @@
 
 
 ### Query-3:
-<p>
+<p></i>
 SELECT DISTINCT Flno, Ffrom, Fto<br>
 FROM flights f, employees e, certified c, aircraft a<br>
 WHERE e.Eid=c.Eid<br> 
 AND c.Aid=a.Aid<br>
 AND a.Cruisingrange>=f.Distance<br> 
 AND e.Salary > 100000;
-</p>
+</i></p>
