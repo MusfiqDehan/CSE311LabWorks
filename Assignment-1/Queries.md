@@ -1,30 +1,21 @@
 # Assignment-1 Queries (1-15)
 
 ### Query-2
-<p>
-SELECT DISTINCT a.Aid<br>
-FROM aircraft a, flights f<br>
-WHERE a.Cruisingrange > (<br>
-    SELECT f.Distance<br>
-    FROM flights f<br>
-    WHERE f.Ffrom="Jessore"<br>
+    
+```MySQL
+    
+SELECT DISTINCT a.Aid
+FROM aircraft a, flights f
+WHERE a.Cruisingrange > (
+    SELECT f.Distance
+    FROM flights f
+    WHERE f.Ffrom="Jessore"
     AND f.Fto="Khulna");
-</p>
-
-
-```C
-
-#include <stdio.h>
-
-main(){
-    printf("Hello World");
-}
-
+    
 ```
 
 
 ### Query-3:
-<p>
     
 ```MySQL
     
@@ -36,28 +27,33 @@ AND a.Cruisingrange>=f.Distance
 AND e.Salary > 100000;
 
 ```
-</p>
 
 ### Query-4
-<p>
-SELECT DISTINCT e.Ename<br>
-FROM employees e, certified c, aircraft a<br>
-WHERE a.Aid=c.Aid<br>
-AND c.Eid=e.Eid<br>
-AND a.Cruisingrange>300<br>
-AND e.Eid<br>
-NOT IN (<br>
-    SELECT c.Eid<br>
-    FROM certified c, aircraft a<br>
-    WHERE a.Aid=c.Aid<br>
+
+```MySQL
+    
+SELECT DISTINCT e.Ename
+FROM employees e, certified c, aircraft a
+WHERE a.Aid=c.Aid
+AND c.Eid=e.Eid
+AND a.Cruisingrange>300
+AND e.Eid
+NOT IN (
+    SELECT c.Eid
+    FROM certified c, aircraft a
+    WHERE a.Aid=c.Aid
     AND a.Aname LIKE "Boeing%");
-</p>
+    
+```
 
 ### Query-5
-<p>
-SELECT e.Eid<br>
-FROM employees e<br>
-WHERE e.Salary<(<br>
-    SELECT MAX(Salary)<br>
+
+```MySQL
+    
+SELECT e.Eid
+FROM employees e
+WHERE e.Salary<(
+    SELECT MAX(Salary)
     FROM employees);
-</p>
+    
+```
