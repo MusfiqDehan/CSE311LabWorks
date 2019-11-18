@@ -35,3 +35,12 @@ NOT IN (<br>
     WHERE a.Aid=c.Aid<br>
     AND a.Aname LIKE "Boeing%");
 </p>
+
+### Query-5
+<p>
+SELECT e.Eid<br>
+FROM employees e<br>
+WHERE e.Salary<(<br>
+    SELECT MAX(Salary)<br>
+    FROM employees);
+</p>
