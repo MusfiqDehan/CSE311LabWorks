@@ -10,7 +10,7 @@ WHERE a.Cruisingrange > (<br>
     WHERE f.Ffrom="Jessore"<br>
     AND f.Fto="Khulna");
 </p>
-```````
+```
 SELECT DISTINCT a.Aid
 FROM aircraft a, flights f
 WHERE a.Cruisingrange > (
@@ -18,7 +18,7 @@ WHERE a.Cruisingrange > (
     FROM flights f
     WHERE f.Ffrom="Jessore"
     AND f.Fto="Khulna");
-```````
+```
 
 
 ### Query-3:
