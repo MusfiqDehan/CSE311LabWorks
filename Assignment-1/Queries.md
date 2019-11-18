@@ -1,5 +1,16 @@
 # Assignment-1 Queries (1-15)
 
+### Query-2
+<p>
+SELECT DISTINCT a.Aid<br>
+FROM aircraft a, flights f<br>
+WHERE a.Cruisingrange > (<br>
+    SELECT f.Distance<br>
+    FROM flights f<br>
+    WHERE f.Ffrom="Jessore"<br>
+    AND f.Fto="Khulna");
+</p>
+
 ### Query-3:
 <p>
 SELECT DISTINCT Flno, Ffrom, Fto<br>
