@@ -10,6 +10,16 @@ WHERE a.Cruisingrange > (<br>
     WHERE f.Ffrom="Jessore"<br>
     AND f.Fto="Khulna");
 </p>
+```
+SELECT DISTINCT a.Aid
+FROM aircraft a, flights f
+WHERE a.Cruisingrange > (
+    SELECT f.Distance
+    FROM flights f
+    WHERE f.Ffrom="Jessore"
+    AND f.Fto="Khulna");
+```
+
 
 ### Query-3:
 <p>
