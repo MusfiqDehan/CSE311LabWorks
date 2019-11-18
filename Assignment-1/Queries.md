@@ -20,3 +20,18 @@ AND c.Aid=a.Aid<br>
 AND a.Cruisingrange>=f.Distance<br> 
 AND e.Salary > 100000;
 </p>
+
+### Query-4
+<p>
+SELECT DISTINCT e.Ename<br>
+FROM employees e, certified c, aircraft a<br>
+WHERE a.Aid=c.Aid<br>
+AND c.Eid=e.Eid<br>
+AND a.Cruisingrange>300<br>
+AND e.Eid<br>
+NOT IN (<br>
+    SELECT c.Eid<br>
+    FROM certified c, aircraft a<br>
+    WHERE a.Aid=c.Aid<br>
+    AND a.Aname LIKE "Boeing%");
+</p>
