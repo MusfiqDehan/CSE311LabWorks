@@ -1,4 +1,4 @@
-<center> # Assignment-1 Queries (1-15)</center>
+# Assignment-1 Queries (1-15)
 
 ### Query-2
     
