@@ -1,4 +1,4 @@
-# CSE311LabWorks
+<h1 align="center"> CSE311LabWorks</h1>
 All the lab works of my CSE311 course are stored here
 
 ## INDEX
