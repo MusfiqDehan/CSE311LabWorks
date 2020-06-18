@@ -1,9 +1,2 @@
-<h1 align="center"> CSE311LabWorks</h1>
-Some lab works of my CSE311 course are stored here
-
-## INDEX
-<ul>
-  <li><a href="https://github.com/MusfiqDehan/Online-Music-Streaming-Platform_DBMS">Project</a></li>
-  <li><a href="Assignment-1/Queries.md">Assignment-1 Queries</a></li>
-  <li><a href="https://github.com/MusfiqDehan/CSE311LabWorks/blob/master/Assignment-1/Queries.md#query-5">কুয়েরি-৫</a></li>
-</ul>
+<h1 align="center">CSE311</h1>
+<h4 align="center">Some of Lab Works of my <strong>Database Management Course</strong> are uploaded here<h4>
